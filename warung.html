@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Warung Barokah</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet" />
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+</head>
+<body>
+  <header class="logo-text">
+    <h1 class="title">Warung Barokah</h1>
+    <p class="subtitle">Jl. Cempaka Raya ( Di Samping praktek dr. Syaiful Anam )</p>
+  </header>
+
+  <main>
+    <input id="cariProduk" placeholder="Cari produk..." />
+    <h2>DAFTAR PRODUK</h2>
+    <div id="daftarProduk" class="produk-container"></div>
+
+    <h2>KERANJANG</h2>
+    <div id="isiKeranjang" class="keranjang-container"></div>
+
+    <h2 id="totalHargaDisplay">TOTAL: Rp0</h2>
+
+    <div class="btn-group">
+      <button id="checkoutBtn">Checkout</button>
+      <button id="tambahProdukBtn">Tambah Produk</button>
+      <button id="kelolaBtn">Kelola Produk</button>
+      <button id="riwayatBtn">Riwayat Transaksi</button>
+    </div>
+  </main>
+
+  <div id="popupContainer" class="hidden"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
